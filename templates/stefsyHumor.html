@@ -1,0 +1,16 @@
+<ion-view title="Stefsy Humor" id="page1" style="background-color:#FFFFFF;">
+  <ion-content padding="true" class="has-header">
+    <form id="stefsyHumor-form1" class="list">
+      <ion-checkbox ng-repeat="azione in azioniList" 
+                    ng-model="azione.checked" 
+                    ng-checked="azione.checked"
+                    class="checkbox-assertive" 
+                    id="id{{$index + 1}}" 
+                    value="{{azione.value}}">{{azione.text}}</ion-checkbox>
+      
+    </form>
+    <div style="margin-right:-20px;">
+      <a ng-click="risultati()" id="stefsyHumor-button1" style="left:-10px;" class="button button-assertive button-full">Invia</a>
+    </div>
+  </ion-content>
+</ion-view>
